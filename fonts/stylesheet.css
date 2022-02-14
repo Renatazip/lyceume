@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Semibold.woff2') format('woff2'),
+    url('Gilroy-Semibold.woff') format('woff'),
+    url('Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agmena Pro';
+    src: url('Gilroy-Semibold.eot');
+    src: local('Agmena Pro'), local('Agmena Pro'),
+    url('Agmena-Pro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

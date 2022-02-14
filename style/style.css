@@ -1,0 +1,364 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+body {
+    background-color: #353535;
+    color: rgba(250, 250, 250, 0.7);
+}
+
+
+.line {
+    border: 1px solid rgba(219, 209, 185, 0.4);
+    width: 80%;
+    margin: auto;
+}
+
+.light-theme .line {
+    border: 1px solid #DEDEDE;
+}
+
+h1 {
+    font-family: Agmena Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+
+h2 {
+    font-family: Agmena Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: Agmena Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.mgt10 {
+    margin-top: 10px
+}
+
+.mgt20 {
+    margin-top: 10px
+}
+
+.mgt30 {
+    margin-top: 10px
+}
+
+.lines_img {
+    position: absolute;
+    width: 786px;
+    height: 486px;
+    left: -154px;
+    top: -69px;
+}
+
+.star_img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 153px;
+    top: 83px;
+}
+
+.sunny_img {
+    width: 58px;
+    height: 60px;
+    position: absolute;
+    right: 100px;
+    top: 180px;
+}
+
+.main__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    margin: 0 10%;
+}
+
+header .wrapper {
+    margin: 40px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.change_theme {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.header__logo {
+
+}
+@media (max-width: 1000px) {
+    .star_img {
+        left: 19px;
+        top: 42px;
+    }
+}
+
+
+/* НАЧАЛО главный блок */
+.main {
+    align-items: center;
+}
+
+.main img {
+    margin: auto 10%;
+}
+
+.main .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main__left {
+    margin-top: 100px;
+    width: 20%;
+}
+
+.main__avatar {
+    width: 620px;
+    height: 465px;
+    border: 1px solid #DBD1B9;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__avatar img {
+    width: 90%;
+}
+
+.main__right {
+    margin-top: 100px;
+    width: 20%;
+}
+
+@media (max-width: 1000px) {
+    .main .wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main__avatar {
+        order: -1;
+        width: 640px;
+        height: 930px;
+        border-radius: 500px;
+    }
+
+    .main__left {
+        width: 100%;
+    }
+
+    .main__right {
+        width: 100%;
+    }
+}
+
+/* КОНЕЦ главный блок */
+
+/* НАЧАЛО скилы */
+
+.skills {
+    margin: 100px auto 130px auto;
+}
+
+.skills .wrapper {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.skills__titles {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.skills__item {
+    width: 126px;
+    height: 183px;
+    padding: 35px 30px;
+    margin: 0 25px;
+    background: #484848;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 1000px) {
+    .skills .wrapper {
+    }
+}
+.light-theme .skills__item {
+    background: #F3F3F3;
+}
+
+.skills__item img {
+    width: 50px;
+}
+
+.skills__item:hover {
+    border: 1px solid rgba(219, 209, 185, 0.4);
+    background: inherit;
+    transition: 0.2s;
+}
+
+/* КОНЕЦ скилы */
+
+
+/* НАЧАЛО инфо */
+.info {
+    margin: 100px auto;
+}
+
+.info__titles {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.info__titles h2 {
+    font-size: 25px;
+}
+
+/* КОНЕЦ инфо */
+
+.hobbies {
+    margin: 80px 0;
+}
+
+.hobbies__titles {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.hobbies .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hobbies__item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    margin: 0 60px;
+    justify-content: center;
+}
+
+.hobbies__item h3 {
+    margin-top: 10px;
+}
+
+
+footer .wrapper {
+    margin: 30px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .header__logo {
+    margin-right: 50px;
+}
+
+body.light-theme {
+    background-color: #E5E5E5;
+    color: #5F5150;
+}
