@@ -9,6 +9,7 @@ btn.addEventListener("click", function () {
         document.getElementById("star_img").src="images/star.svg";
         document.getElementById("sunny_img").src="images/sunny.svg";
         document.getElementById("header__logo").src="images/logo.svg";
+        document.getElementById("footer__logo").src="images/logo.svg";
 
     }
     else {
@@ -17,5 +18,6 @@ btn.addEventListener("click", function () {
         document.getElementById("star_img").src="images/star_white.svg";
         document.getElementById("sunny_img").src="images/sunny_white.svg";
         document.getElementById("header__logo").src="images/logo_white.svg";
+        document.getElementById("footer__logo").src="images/logo_white.svg";
     }
 });
