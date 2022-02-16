@@ -191,6 +191,20 @@ header .wrapper {
         left: 19px;
         top: 42px;
     }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
 }
 
 
