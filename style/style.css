@@ -82,6 +82,12 @@ body {
 .light-theme .line {
     border: 1px solid #DEDEDE;
 }
+a {
+    color: rgba(250, 250, 250, 0.7);
+}
+.light-theme a{
+    color: #5F5150;
+}
 
 h1 {
     font-family: Agmena Pro;
